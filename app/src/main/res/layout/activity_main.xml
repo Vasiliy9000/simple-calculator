@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotation="0"
+    android:rotationX="0"
+    android:rotationY="0"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ButtonDivide"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="20dp"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/SecondNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/ButtonMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/EqualsView" />
+
+    <Button
+        android:id="@+id/ButtonMinus"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/SecondNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EqualsView" />
+
+    <Button
+        android:id="@+id/ButtonPlus"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/SecondNumber"
+        app:layout_constraintStart_toEndOf="@+id/ButtonMinus"
+        app:layout_constraintTop_toBottomOf="@+id/EqualsView" />
+
+    <EditText
+        android:id="@+id/FirstNumber"
+        android:layout_width="376dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SecondNumber" />
+
+    <EditText
+        android:id="@+id/SecondNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EqualsView" />
+
+    <TextView
+        android:id="@+id/EqualsView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="146dp"
+        android:text="Equals"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/SecondNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonMultiply"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/SecondNumber"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonDivide"
+        app:layout_constraintStart_toEndOf="@+id/ButtonPlus"
+        app:layout_constraintTop_toBottomOf="@+id/EqualsView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
